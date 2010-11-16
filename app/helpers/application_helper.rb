@@ -9,7 +9,9 @@ module ApplicationHelper
     if @title.nil?
       base_title
     else
-      "#{base_title} | #{@title}"
+      #za da nema malicious code
+      "#{base_title} | #{h(@title)}"
+      #"#{base_title} | #{@title}"
     end
   end
 
