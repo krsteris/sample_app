@@ -7,4 +7,9 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+
+  #ova e za da ne gi zapisva kako clear text vo log
+  # Scrub sensitive parameters from your log
+  filter_parameter_logging :password
 end
