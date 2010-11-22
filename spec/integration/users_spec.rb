@@ -52,11 +52,11 @@ describe "Users" do
 
      it "should not make a new user2" do
 
-          visit signup_path
-           fill_in "q",         :with => "asd"
+          visit "http://www.google.com"
+           #fill_in "user_name",         :with => "asd"
           click_button
           #response.should render_template('new')
-          response.should have_tag("title","asd")
+          response.should have_tag("title",/title/)
 
       end
 
